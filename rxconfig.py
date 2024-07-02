@@ -15,6 +15,9 @@ config = rx.Config(
                     "white": "#FFF",
                 }
             },
+            "font-family": {
+                "sans": ["IBM Plex Mono", "sans-serif"],
+            },
         },
     },
 )
