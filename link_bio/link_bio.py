@@ -7,10 +7,10 @@ from link_bio.views.header.header import header
 from link_bio.views.links.links import links
 
 
-class State(rx.State):
-    """This is a simple example of a reflex state."""
+# class State(rx.State):
+#     """This is a simple example of a reflex state."""
 
-    pass
+#     pass
 
 
 def index() -> rx.Component:
