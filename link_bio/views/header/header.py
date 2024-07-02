@@ -22,7 +22,7 @@ def header() -> rx.Component:
                 src="/photos/camel.png",
                 height="168px",
                 width="233px",
-                class_name="flex-1",
+                class_name="flex-1 hidden md:block",
             ),
             class_name="flex items-end justify-between gap-4 w-full",
         ),
