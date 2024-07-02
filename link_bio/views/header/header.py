@@ -1,19 +1,19 @@
 import reflex as rx
 
 
-def header() -> rx.Component:
+def header(name: str, profile_pic: str, twitter: str) -> rx.Component:
     return rx.hstack(
         rx.hstack(
             rx.vstack(
                 rx.image(
-                    src="/photos/ascii.png",
+                    src=f"{profile_pic}",
                     height="164px",
                     width="164px",
                     class_name="rounded-full",
                 ),
                 rx.box(
-                    rx.text("Tomas Ferreras", class_name="leading-[110%]"),
-                    rx.text("@tomasferrerasdev", class_name="leading-[110%]"),
+                    rx.text(f"{name}", class_name="leading-[110%]"),
+                    rx.text(f"@{twitter}", class_name="leading-[110%]"),
                     class_name="flex flex-col gap-1",
                 ),
                 class_name="flex flex-col gap-4 flex-1",
